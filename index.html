@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶遊戲</title>
+    <link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>記憶遊戲</h1>
+    <div id="controls">
+        <button id="start-button">開始遊戲</button>
+        <select id="theme-select">
+            <option value="animals">動物主題</option>
+            <option value="fruits">水果主題</option>
+        </select>
+        <select id="grid-size">
+            <option value="2">2x2</option>
+            <option value="4" selected>4x4</option>
+            <option value="6">6x6</option>
+        </select>
+        <select id="flip-time">
+            <option value="3">3秒</option>
+            <option value="5">5秒</option>
+            <option value="10">10秒</option>
+        </select>
+        <label>
+            <input type="checkbox" id="hide-matched"> 隱藏已配對的卡片
+        </label>
+    </div>
+    <div id="timer"></div>
+    <div id="game-container"></div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
